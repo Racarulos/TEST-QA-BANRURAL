@@ -21,4 +21,6 @@ En esta parte se encontraron varios errores que afectaban a la funcionalidad del
 
 6. Error en la función resetGame: Al momento de reiniciar el juego y volver a colocar un número nuevo, se encontró que el número aleatorio se colocaba únicamente con el número 1. Corrección: Se usó la misma línea de código que se tiene al momento de iniciar el juego.
 
+7. ocultar los scripts: Como parte de buenas practicas de programación, es recomendable ocultar los scripts que se ejecutan en el codigo, por lo cual se agrego una carpeta donde se colocaron los scripts que utiliza la pagina.
+
 Realizando las correcciones indicadas arriba el programa funciona de forma correcta.
