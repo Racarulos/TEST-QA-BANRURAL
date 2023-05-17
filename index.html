@@ -57,7 +57,7 @@
 
     let userGuess = guessField.value;
 
-    if(userGuess != '' && Number.isInteger(Number(userGuess))){ //Se agrego validacion para que no entre si no es entero el numero inrgesado
+    if(userGuess != '' && Number.isInteger(Number(userGuess))){ //Se agrego validacion para que no entre si no es entero el numero ingresado
 
       if(guessCount === 1) {
         guesses.textContent = 'Número aleatorio anterior: ';
@@ -77,15 +77,13 @@
         lastResult.textContent = 'Incorrecto! ';
         lastResult.style.backgroundColor = 'black'; // El color correcto debe de ser negro
         if(userGuess < randomNumber) {
-          lowOrHi.textContent = 'El número es mayor!'; //Ortografia con los signos de exclamacion
+          lowOrHi.textContent = 'El número es mayor!'; 
         } else if(userGuess > randomNumber) {
-          lowOrHi.textContent = 'El número es menor!'; //Ortografia con los signos de exclamacion
+          lowOrHi.textContent = 'El número es menor!'; 
       }
     }
 
     guessCount++;
-    guessField.value = '';
-    guessField.focus();
 
     }else if(userGuess === ''){ //Se agrego mensaje para valores que son igual a vacio
 
@@ -98,6 +96,8 @@
       lastResult.style.backgroundColor = 'black';
 
     }
+    guessField.value = '';
+    guessField.focus();
 
   }
 
